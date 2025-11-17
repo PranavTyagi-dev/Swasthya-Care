@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar">
+        <div class="logo">Swasthya<span class="logo-care">Care</span></div>
+        <div class="nav-menu">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="pharmacystore.html" class="nav-link">Pharmacy</a>
+            <a href="" class="nav-link">Contact</a>
+        </div>
+        <div>
+            <label for="location" style="display: none;">Location</label>
+            <select id="location" class="location">
+                <option value="">Choose Location</option>
+                <option value="in">India</option>
+                <option value="la">Los Angeles</option>
+                <option value="sf">San Francisco</option>
+                <option value="virtual">Virtual Care</option>
+            </select>
+        </div>
+        <a href="#contact" class="Appointment-btn">Book Appointment</a>
+        <a href="profile.html" class="profile"><img src="download.png" alt="Profile" height="60"></a>
+    </nav>
+    <!-- form1 -->
+    <div class="parent-form">
+        <form action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" placeholder="Pranav" required><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" placeholder="pranav@example.com" required><br>
+                <label for="number">Phone Number</label><br>
+                <input type="tel" id="number" placeholder="123-4567" required><br>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob" required>
+            </fieldset>
+        </form>
+
+        <!-- form2 -->
+        <form action="#">
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <label for="service">Service Type</label><br>
+                <select name="service" id="service" class="input" required>
+                    <option value="">Select a Servive</option>
+                    <option value="">Primary Care</option>
+                    <option value="">Mental Health</option>
+                    <option value="">Specialized Care</option>
+                    <option value="">Preventive Medicine</option>
+                    <option value="">Cardiology</option>
+                    <option value="">Wellness Programs</option>
+                </select><br>
+                <label for="time">Preferred Time</label><br>
+                <input type="time" id="time" required><br>
+                <label for="visit">Visit Type</label><br>
+                <input type="radio" id="person" name="visit-type" style="height: auto; margin: 0; display: inline;">
+                <label for="person">In-Person</label>
+                <input type="radio" id="virtual" name="visit-type" style="height: auto;margin: 0;">
+                <label for="virtual">Virtual</label>
+                <br>
+                <label for="additional">Additional Information</label><br>
+                <textarea name="additional" id="additional" placeholder="Tell us about your Health concerns..." class="input" style="height: 5rem;"></textarea>
+            </fieldset>
+        </form>
+
+        <button type="submit" class="submit-btn"> <a href="homepage.html" class="submit-a">Submit Request</a></button>
+        <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+</body>
+
+</html>
