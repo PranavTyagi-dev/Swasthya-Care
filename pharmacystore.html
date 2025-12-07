@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwasthyaCare Medicine Store</title>
+    <link rel="stylesheet" href="pharmacystore.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Swasthya<span class="logo-care">Care</span></div>
+
+        <div class="nav-menu">
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="navbar-actions">
+            <div class="search-box-wrapper">
+                <input type="search" placeholder="Search medicines, brands..." class="store-search-input">
+                <i class="fas fa-search store-search-icon"></i>
+            </div>
+
+            <a href="profile.html" class="profile-link">
+                <img src="download.png" alt="Profile" class="profile-img">
+            </a>
+        </div>
+    </header>
+
+    <main class="store-container">
+        
+        <aside class="store-sidebar">
+            <div class="sidebar-block">
+                <h3><i class="fas fa-list-alt"></i> Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#">Cold & Flu</a></li>
+                    <li><a href="#">Pain Relief (52)</a></li>
+                    <li><a href="#">Diabetic Care</a></li>
+                    <li><a href="#">Mother & Baby Care</a></li>
+                    <li><a href="#">Personal Hygiene</a></li>
+                    <li><a href="#">Prescription Required</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-block">
+                <h3><i class="fas fa-filter"></i> Filter By</h3>
+                <label class="filter-option">
+                    <input type="checkbox"> In Stock
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox"> Prescription Free
+                </label>
+                
+                <h4>Price Range</h4>
+                <div class="price-range">$10 - $50</div>
+
+                <h4>Brand</h4>
+                <select class="brand-select">
+                    <option>All Brands</option>
+                    <option>Cipla</option>
+                    <option>Himalaya</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="store-products">
+            <h2 class="store-title">All Products</h2>
+            <div class="product-sort">
+                <label for="sort">Sort By:</label>
+                <select id="sort">
+                    <option>Best Match</option>
+                    <option>Price: Low to High</option>
+                    <option>Customer Rating</option>
+                </select>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="pain relief.jpeg" alt="Pain Reliever Tablets" class="product-img">
+                    <span class="product-tag prescription-tag">Rx Required</span>
+                    <h3 class="product-name">FastRelief Extra Strength Tablets</h3>
+                    <p class="product-description">20 Tablets | For severe headaches and muscle pain.</p>
+                    <div class="rating"><i class="fas fa-star"></i> 4.5 (120)</div>
+                    <div class="product-price">₹ 350.00</div>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="vitd3.jpeg" alt="Vitamin D3 Capsules" class="product-img">
+                    <span class="product-tag otc-tag">OTC</span>
+                    <h3 class="product-name">Daily Vitamin D3 Capsules</h3>
+                    <p class="product-description">60 Capsules | Supports bone and immune health.</p>
+                    <div class="rating"><i class="fas fa-star"></i> 4.8 (250)</div>
+                    <div class="product-price">₹ 599.00</div>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="coughsyrum.jpeg" alt="Cough Syrup Bottle" class="product-img">
+                    <span class="product-tag otc-tag">OTC</span>
+                    <h3 class="product-name">NightTime Cough Syrup</h3>
+                    <p class="product-description">100ml | Fast relief from dry cough.</p>
+                    <div class="rating"><i class="fas fa-star"></i> 4.2 (88)</div>
+                    <div class="product-price">₹ 220.00</div>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="firstaid.jpeg" alt="Basic First Aid Kit" class="product-img">
+                    <span class="product-tag otc-tag">Kit</span>
+                    <h3 class="product-name">Essential First Aid Kit</h3>
+                    <p class="product-description">Compact kit for home and travel use.</p>
+                    <div class="rating"><i class="fas fa-star"></i> 4.9 (50)</div>
+                    <div class="product-price">₹ 799.00</div>
+                    <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">&laquo; Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next &raquo;</a>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
