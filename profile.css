@@ -145,3 +145,145 @@ a:hover {
 .health-percent:hover{
     transform: scale(1.03);
 }
+
+/* Quick Actions */
+.quick-actions, .history, .personal-details {
+    padding: 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.quick-actions h3, .history h3, .personal-details h3 {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e8e4df;
+    padding-bottom: 0.5rem;
+}
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.action-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+.action-card:hover {
+    box-shadow: 0 6px 18px rgba(249, 105, 105, 0.2);
+}
+.action-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.action-card p {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+.action-link {
+    font-weight: 600;
+}
+
+/* Medical History */
+.history-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+.history-block {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.history-block h4 {
+    color: #f96969;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e8e4df;
+    padding-bottom: 0.5rem;
+}
+
+/* Table Styling */
+.appointment-history table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+.appointment-history th, .appointment-history td {
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+.appointment-history th {
+    background-color: #fffafa;
+    font-weight: 700;
+}
+.status-upcoming {
+    color: #e9967a; 
+    font-weight: 600;
+}
+.status-completed {
+    color: #5cb85c;
+    font-weight: 600;
+}
+
+/* Medication List */
+.medication-list ul {
+    list-style: none;
+    padding: 0;
+}
+.medication-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e8e4df;
+    font-size: 1rem;
+    color: #718096;
+}
+.medication-list li:last-child {
+    border-bottom: none;
+}
+.med-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* Personal Details */
+.personal-details-section {
+    padding-bottom: 4rem;
+}
+.details-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+}
+.detail-item h5 {
+    font-size: 1.1rem;
+    color: #f96969;
+    margin-bottom: 0.5rem;
+}
+.detail-item i {
+    margin-right: 0.5rem;
+}
+.detail-item p {
+    font-size: 1rem;
+    color: #2d3748;
+}
+.edit-profile-btn {
+    background-color: #f96969;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.edit-profile-btn:hover {
+    background-color: #dc6565;
+}
