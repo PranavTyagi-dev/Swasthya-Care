@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SwasthyaCare Profile</title>
     <link rel="stylesheet" href="profile.css">
 </head>
 
@@ -17,37 +17,60 @@
             <div class="nav-link nav-profile"><a href="">Profile</a></div>
         </div>
     </div>
+
     <!-- profile data -->
     <div class="profile-data">
         <div class="parent-profile">
-            <div class="profile-pic"><img src="180650.png" alt="profile Pic" height="150px"></div>
+            <div class="profile-pic"><img src="Assets/ProfilePic.png" alt="profile Pic" height="150px"></div>
             <div class="name">
                 <h3>Pranav Tyagi</h3>
                 <h5>Patient ID: #12345</h5>
                 <h5>Member since: January 2024</h5>
             </div>
         </div>
+
         <div class="dr-conc">
             <h4>Speak to a healthcare provider</h4>
-            <div class="book-div"><div class="book-btn"><a href="contact.html" class="book-now">Book Now</a></div></div>
+            <div class="book-div">
+                <div class="book-btn"><a href="contact.html" class="book-now">Book Now</a></div>
+            </div>
         </div>
     </div>
-    <!-- health <data -->
-     <div class="health-data">
+
+    <!-- health data -->
+    <div class="health-data">
         <h3>Your Health Progress</h3>
         <div class="health-graph">
+
             <div class="health-percent">
                 <h5>Your Health Score</h5>
-                <img src="graph.png" alt="graph">
+                <img src="Assets/graph.png" alt="graph">
                 <h6>+12% in last month</h6>
             </div>
-            <div class="health-graph">
-                
+
+            <div class="health-percent">
+                <h5>Body Fat Percent</h5>
+                <h6 class="fat">-2% body Fat</h6>
+                <h6>Current Body fat :- 18%</h6>
             </div>
+
+            <!-- BMI Calculator -->
+            <div class="health-percent">
+                <h3>BMI Calculator</h3>
+
+                <input type="text" id="Weight" placeholder="  Weight (in kg)">
+                <input type="text" id="Height" placeholder="  Height (in m)">
+                <br>
+
+                <button id="BMI">Calculate</button>
+
+                <p id="BMIans"></p>
+            </div>
+
         </div>
-     </div>
-    
-      <main class="dashboard-main">
+    </div>
+
+    <main class="dashboard-main">
 
         <div class="quick-actions">
             <h3>Quick Actions</h3>
@@ -56,17 +79,19 @@
                     <i class="icon-lg"></i>
                     <h4>Refill Prescription</h4>
                     <p>Order your repeat medications fast.</p>
-                    <a href="#" class="action-link">Start Refill &rarr;</a>
+                    <a href="#" class="action-link">Start Refill →</a>
                 </div>
+
                 <div class="action-card">
                     <h4>Lab Results</h4>
                     <p>View, download, and share your latest test results.</p>
-                    <a href="#" class="action-link">View Results &rarr;</a>
+                    <a href="#" class="action-link">View Results →</a>
                 </div>
+
                 <div class="action-card">
                     <h4>Upcoming Appointments</h4>
                     <p>Check your schedule and get reminders.</p>
-                    <a href="#" class="action-link">Manage Schedule &rarr;</a>
+                    <a href="#" class="action-link">Manage Schedule →</a>
                 </div>
             </div>
         </div>
@@ -74,6 +99,7 @@
         <div class="history">
             <h3>Medical History & Records</h3>
             <div class="history-grid">
+
                 <div class="history-block appointment-history">
                     <h4> Recent Appointments</h4>
                     <table>
@@ -100,37 +126,46 @@
                 </div>
 
                 <div class="history-block medication-list">
-                    <h4><i></i> Current Medications</h4>
+                    <h4>Current Medications</h4>
                     <ul>
                         <li><span class="med-name">Vitamin D3</span> (Daily, 1000 IU)</li>
                         <li><span class="med-name">Levothyroxine</span> (Daily, 50mcg)</li>
                         <li><span class="med-name">Ibuprofen</span> (As needed)</li>
                     </ul>
                 </div>
+
             </div>
         </div>
 
         <div class="personal-details">
             <h3>Personal & Contact Information</h3>
             <div class="details-card">
+
                 <div class="detail-item">
                     <h5>Email</h5>
                     <p>pranav.t@email.com</p>
                 </div>
+
                 <div class="detail-item">
                     <h5>Phone</h5>
                     <p>+91 98765 43210</p>
                 </div>
+
                 <div class="detail-item">
-                    <h5> Address</h5>
+                    <h5>Address</h5>
                     <p>123 Wellness St, Delhi NCR, India</p>
                 </div>
+
                 <div>
-                    <button class="edit-profile-btn"> Edit Profile</button>
+                    <button class="edit-profile-btn">Edit Profile</button>
                 </div>
+
             </div>
         </div>
+
     </main>
+    <script src="profileBMI.js"></script>
+
 </body>
 
 </html>
