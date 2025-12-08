@@ -131,7 +131,8 @@ a:hover {
 }
 .health-graph{
     display: grid;
-    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
 .health-percent{
     background-color: white;
@@ -144,6 +145,32 @@ a:hover {
 }
 .health-percent:hover{
     transform: scale(1.03);
+}
+.fat{
+    margin-top: 6rem;
+    font-weight: bolder;
+    color: #ff6b6b;
+    font-size: 2rem;
+}
+.health-percent input{
+    border-radius: 9px;
+    height: 40px;
+    width: 170px;
+    margin: 10px;
+}
+#BMI{
+    background-color: #f96969;
+    height: 40px;
+    width: 170px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 10px;
+    font-size: larger;
+}
+#BMIans{
+    font-size: large;
+    font-weight: bold;
 }
 
 /* Quick Actions */
@@ -286,4 +313,162 @@ a:hover {
 }
 .edit-profile-btn:hover {
     background-color: #dc6565;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 1024px) {
+    .quick-actions, .history, .personal-details, .health-data {
+        padding: 2rem;
+    }
+    /* Navbar */
+    .nav-link {
+        margin-left: 2rem;
+    }
+    /* Profile Header */
+    .profile-data {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 2rem;
+        height: auto;
+        gap: 1rem;
+    }
+    .profile-pic {
+        height: 8rem;
+        width: 8rem;
+    }
+    .name {
+        padding: 0 1rem;
+    }
+    .name h3 {
+        font-size: 1.75rem;
+    }
+    .dr-conc {
+        padding: 1.5rem;
+    }
+    .book-btn {
+        width: 80%;
+    }
+
+    /* Health Stats */
+    .health-graph {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .health-percent:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Quick Actions */
+    .action-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* History */
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Personal Details */
+    .details-card {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    h3 { font-size: 1.75rem; }
+    
+    /* Navbar Toggle */
+    .nav-right {
+        display: none; 
+    }
+    .navbar {
+        justify-content: center;
+        padding: 0.75rem 1rem;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    /* Profile Header */
+    .profile-data {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .parent-profile {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #e8e4df;
+    }
+    .profile-pic {
+        height: 7rem;
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    .name {
+        padding: 0;
+    }
+    .dr-conc {
+        padding: 1rem;
+        order: -1;
+    }
+    .book-btn {
+        width: 90%;
+    }
+    .dr-conc h4 {
+        margin-bottom: 1rem;
+    }
+
+    /* Health Stats */
+    .health-data {
+        padding: 2rem 1rem;
+    }
+    .health-graph {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .health-percent {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .health-percent:nth-child(3) {
+        grid-column: auto;
+    }
+    .health-percent input, #BMI {
+        width: 90%;
+    }
+
+    /* Quick Actions */
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    .quick-actions, .history, .personal-details {
+        padding: 2rem 1rem;
+    }
+
+    .appointment-history table {
+        min-width: 400px; 
+    }
+
+    /* Personal Details */
+    .details-card {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+    .details-card > div:last-child {
+        text-align: center;
+    }
 }
