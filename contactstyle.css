@@ -147,6 +147,12 @@ input{
 .submit-btn:hover{
     background-color: #d34a4a;
 }
+.submit-a-btn{
+    color: white;
+}
+.submit-a-btn:hover{
+    color: white;
+}
 .reset-btn{
     height: 3rem;
     padding: 1rem;
@@ -159,4 +165,92 @@ input{
     cursor: pointer;
     border: 1px solid black;
     transition: background-color 0.5s ease;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0.75rem 1.5rem;
+    }
+    .nav-link {
+        padding: 1rem 0;
+        margin: 1.5rem;
+        font-size: 1rem;
+    }
+    .Appointment-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    .parent-form {
+        padding: 3rem 2rem;
+    }
+    fieldset {
+        padding: 2.5rem;
+    }
+    input, .input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+        flex-wrap: wrap;
+    }
+    .logo {
+        font-size: 1.4rem;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #e8e4df;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        z-index: 999;
+    }
+    .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #f7f5f2;
+    }
+    .hamburger {
+        display: block;
+        order: 3;
+    }
+    .location {
+        display: none;
+    }
+    .Appointment-btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    /* Form */
+    .parent-form {
+        padding: 2rem 1rem;
+    }
+    fieldset {
+        padding: 1.5rem 1rem;
+    }
+    input, .input {
+        width: 95%;
+        height: 2.2rem;
+    }
+    label {
+        display: block; 
+        margin-bottom: 0.25rem;
+    }
+
+    /* Buttons */
+    .submit-btn, .reset-btn {
+        display: block;
+        width: 95%;
+        margin: 1rem auto;
+    }
 }
